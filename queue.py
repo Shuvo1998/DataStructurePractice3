@@ -2,10 +2,11 @@ class Queue:
     def __init__(self):
         self.items = []
 
-    def insert(self,item):
+    def insert(self):
+        item = input()
         self.items.append(item)
 
-    def __delete__(self):
+    def delete(self):
         return self.items.pop(0)
 
     def is__empty(self):
@@ -16,4 +17,10 @@ class Queue:
 
 if __name__ == "__main__":
     q = Queue()
-    
+    for i in range(5):
+        q.insert()
+
+    while not q.is_empty():
+        deleted  = q.delete()
+        print(deleted)
+
