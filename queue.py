@@ -7,3 +7,10 @@ class Queue:
 
     def __delete__(self):
         return self.items.pop(0)
+
+    def is__empty(self):
+        if self.items == []:
+            return True
+        return False
+
+
